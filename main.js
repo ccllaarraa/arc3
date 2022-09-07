@@ -56,8 +56,8 @@
         end: "bottom 200px",
         toggleActions: "restart pause reverse reset",
     },
-    duration: 0.3,
-    scale: 0.7,
+    duration: 0.1,
+    scale: 0.3,
     opacity: 0,
 
     filter:"blur(4px)"

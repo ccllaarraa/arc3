@@ -53,7 +53,7 @@ body {
         }
     }
     .hiddenImage {
-        position: absolute;
+        position: fixed;
         display: none;
         transition: 2s;
         img {
