@@ -48,20 +48,35 @@
  }
 
 
-
  gsap.to(".hiddenImage", {
     scrollTrigger: {
         trigger: ".hiddenImage",
-        start: "70%+=5px center ",
-        end: "bottom 200px",
-        toggleActions: "restart pause reverse reset",
+        start: "bottom 190px ",
+        end: "bottom 190px",
+        // toggleActions: "restart pause reverse reset",
+        toggleActions: "play revert pause reset",
+        scrub: true,
+        // markers:true
     },
-    duration: 0.1,
+    duration: .1,
     scale: 0.3,
-    opacity: 0,
-
     filter:"blur(4px)"
 });
+
+
+// fix video
+$(window).scroll(function() {    
+    var scrollBottom = $(window).scrollTop();
+    if (scrollBottom >= $(
+        '.end-of-video').offset().top + $('.end-of-video').
+          outerHeight() - window.innerHeight + 200) {
+        $(".hiddenImage").addClass("ciao");
+    } else {
+        $(".hiddenImage").removeClass("ciao");
+    }
+});
+
+
 
 
 // test on scroll

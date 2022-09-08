@@ -111,7 +111,7 @@ body {
             line-height: 26px;
             opacity: 1;
             padding-bottom: 800px;
-            margin-top: 200px;
+            margin-top: 800px;
             .romie {
                 font-family: 'romie';
                 font-size: 29px;
@@ -205,12 +205,21 @@ transition: all 1s ease;
     right: calc(50% - 410px) !important;
 }
 
+
+.ciao {
+    opacity: 0 !important;
+    transition: all 1s ease !important;
+}
+
 .footer {
-    height: 310px;
+    height: calc(50vh - 101px);
     background: #c6c6c6;
     box-shadow: 2px -2px 9px 6px #c6c6c6;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    width: 100vw;
+    padding-top: 45px;
     .col1 {
         padding: 15px;
         display: flex;
@@ -220,6 +229,8 @@ transition: all 1s ease;
         line-height: 30px;
         a {
             color: black;
+            text-decoration: unset;
+            cursor: pointer;
             &:hover {
                 color: white !important;
             }
